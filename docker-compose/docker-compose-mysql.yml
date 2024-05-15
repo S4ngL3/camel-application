@@ -1,0 +1,21 @@
+# 1. Create container
+version: '3.1'
+ 
+services:
+ 
+  db:
+    container_name: mysql
+    image: mysql:latest
+    restart: always
+    ports:
+        - 3306:3306
+    volumes:
+        - ./mysql/data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: Password@123
+# 2. Exec
+# docker exec -it <con_name> mysql -u root -p
+# enter password
+# mysql>show database;
+# mysql>create database TestDB;
+# mysql>use TestDB;

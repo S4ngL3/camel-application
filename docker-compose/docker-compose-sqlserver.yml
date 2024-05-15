@@ -1,0 +1,23 @@
+# 1. Create container
+version: '3.3'
+
+services:
+  mssql:
+    container_name: mssqlserver
+    image: mcr.microsoft.com/mssql/server:latest
+    restart: always
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "Password@123"
+    ports:
+      - 1433:1433
+    volumes:
+      - ./mssql/data:/var/opt/mssql
+      
+volumes:
+  my-volume:
+# 2. Exec
+# docker exec -it mssqlserver /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Password@123
+# 1>create database TestDB;
+# 1>use TestDB;
+# 1>go;

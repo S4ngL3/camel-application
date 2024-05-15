@@ -22,6 +22,30 @@
           <artifactId>jackson-databind</artifactId>
           <version>2.17.1</version>
       </dependency>
+      <!-- https://mvnrepository.com/artifact/org.apache.camel/camel-jdbc -->
+      <dependency>
+          <groupId>org.apache.camel</groupId>
+          <artifactId>camel-jdbc</artifactId>
+          <version>4.6.0</version>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+      <dependency>
+          <groupId>mysql</groupId>
+          <artifactId>mysql-connector-java</artifactId>
+          <version>8.0.33</version>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->
+      <dependency>
+          <groupId>com.microsoft.sqlserver</groupId>
+          <artifactId>mssql-jdbc</artifactId>
+          <version>12.6.1.jre11</version>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/org.apache.camel/camel-api -->
+      <dependency>
+          <groupId>org.apache.camel</groupId>
+          <artifactId>camel-api</artifactId>
+          <version>4.6.0</version>
+      </dependency>
 
   </dependencies>
 </project>
